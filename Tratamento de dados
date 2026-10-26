@@ -1,0 +1,31 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	 //declaração de variaveis
+		String nome;
+		String sobrenome;
+		int idade;
+		int ano;
+		
+		//coleta das variáveis
+		Console.WriteLine(" INSIRA O NOME ");
+		nome = Console.ReadLine();
+		Console.WriteLine(" INSIRA O SOBRENOME ");
+		sobrenome = Console.ReadLine();
+		Console.WriteLine(" INSIRA A IDADE ");
+		idade = Convert.ToInt16(Console.ReadLine());
+		
+		//EXIBIÇÃO E TRATAMENTO DE DADOS
+		Console.WriteLine("OLÁ " + nome + " " + sobrenome);
+		Console.WriteLine(" SUA IDADE É: " + idade);
+		if (idade >= 18){
+			Console.WriteLine(" VOCÊ É MAIOR DE IDADE");
+		}
+		else {
+			Console.WriteLine(" VOCÊ É MENOR DE IDADE ");
+		}
+	}
+}
